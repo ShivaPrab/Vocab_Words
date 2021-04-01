@@ -1,17 +1,13 @@
 '''
 Project Overview: 
-
 This simple project aims to create usable sets of FlashCards, complete with
 the definition of a word, it's synonyms, and it's antonyms. The user should be
 able to randomly group these flashcards and create their own sets. 
-
 Objectives: 
 1.) More Experience Writing a Well Formatted Python Project and Script
 2.) Help Create usable material to study for the GRE 
-
 This Script: 
 Picking a Random GRE word from our Txt File
-
     Note, this script will only generate a random word and find the following: 
     1.) The word's definition
     2.) Synonymns (words with similiar meaning)
@@ -23,26 +19,9 @@ import regex
 from PyDictionary import PyDictionary
 dictionary=PyDictionary() #necessary from documentation
 
-file = open(r"Data\Words_Initial.txt",) # Assume a well formatted txt file 
+file = open(r"Vocab_Words\Data\Words_Initial.txt") # Assume a well formatted txt file 
 words = file.read().split("\n")
 
-class Flash_Card_Class:
-    """
-    TBD
-    """
-    dictionary = PyDictionary()
-    def __init__(self, word):
-        self.word = word
-        self.valid = False
-
-    def get_definition(self):
-        dictionary.meaning(self.word)
-    
-    def get_syns(self):
-        dictionary.synonym(self.word)
-
-    def get_ants(self):
-        dictionary.antonym(self.word)
 
 def get_word():
     """
@@ -55,6 +34,8 @@ def get_word():
         if (word[0]):
             valid_word = True
             return word
+
+print(get_word())
 
 def define_word():
     """

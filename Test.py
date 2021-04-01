@@ -29,4 +29,12 @@ def define_found_word():
             defs = dictionary.meaning(word)
             for k, v in defs.items():
                 print(str(k) + ": " + str(v).strip("[]\'\"").replace("\'", "")
-            valid_word = True
+            valid_word=True
+            
+class MyClass:
+    """
+    A simple example class
+    """
+    def __init__(self, word):
+        self.word = word
+        
