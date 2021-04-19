@@ -11,20 +11,23 @@ Objectives:
 
 ''' 
 
-Code Quirks: 
+# Code Notes: 
 
-1.) The word generated from "get_word()" is not the same as the word from "define_word()"
+Quirks: 
+
+	1.) The word generated from "get_word()" is not the same as the word from "define_word()"
 	in R, we can "set_seed" to keep the randomly generated word. But I'm unsure how to do that in Python
 
-2.) There are several things that need to be done to clean up the print statements to make them look nice. 
+	2.) There are several things that need to be done to clean up the print statements to make them look nice. 
 	i.e. The synonyms list that we get back have brackets. Gross. 
 
-3.) Is it legal for me to index the list by using "len(words)-1"? I'm unsure that is doing what I want it to
+	3.) Is it legal for me to index the list by using "len(words)-1"? I'm unsure that is doing what I want it to
 
 Changes needed to be made: 
-1.) Attempt to unify "get_word()" & "define_word():" so the code is not repetitive. 
+	
+	1.) Attempt to unify "get_word()" & "define_word():" so the code is not repetitive. 
 
-2.) Export a csv file with: word, part of speech, definition, syns, ants 
+	2.) Export a csv file with: word, part of speech, definition, syns, ants 
 	if a word has 2 parts of speech, make 2 entries 
 
 
