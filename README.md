@@ -21,9 +21,6 @@ Code Quirks:
 
 3.) Is it legal for me to index the list by using "len(words)-1"? I'm unsure that is doing what I want it to
 
-4.) Shiva is really, like really bad at reading in files. See "Test.py -> read_in_words. 
-	I want to learn how to read in files using a function instead of just using a variable 
-
 Changes needed to be made: 
 1.) Attempt to unify "get_word()" & "define_word():" so the code is not repetitive. 
 
